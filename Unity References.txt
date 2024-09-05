@@ -1,0 +1,14 @@
+Audio Source Script Reference
+https://docs.unity3d.com/ScriptReference/AudioSource.Play.html 
+https://support.unity.com/hc/en-us/articles/206116056-How-do-I-use-an-Audio-Source-in-a-script 
+
+Game Object Rotation 
+https://discussions.unity.com/t/how-to-set-rotation-of-object-by-script/418841/19
+https://discussions.unity.com/t/setting-value-of-transform-rotation-in-code-c/90966
+
+YouTube Tutorials: 
+Embed Unity Game into HTML Webpage (2015) Directed by Embed Unity Game into HTML Webpage. Available at: https://www.youtube.com/watch?v=K52l9P19_2o (Accessed: 7 August 2024). 
+
+Simple Question Dialog in Unity! (Yes-No Ok-Cancel Unity Tutorial) (2021) Directed by Simple Question Dialog in Unity! (Yes-No Ok-Cancel Unity Tutorial). Available at: https://www.youtube.com/watch?v=msCGC22vKQM (Accessed: 6 August 2024).
+
+Unity MAIN MENU 2022 Tutorial | Beginner Friendly (2022) Directed by Unity MAIN MENU 2022 Tutorial | Beginner Friendly. Available at: https://www.youtube.com/watch?v=pcyiub1hz20 (Accessed: 3 August 2024).
