@@ -6,6 +6,6 @@ using UnityEngine;
 
 public class AudioObject : ScriptableObject
 {
-    public AudioClip clip;
-    public string subtitle;
+    public AudioClip clip; // Reference to audio file
+    public string subtitle; // For subtitle
 }

@@ -11,18 +11,18 @@ public class QAManager : MonoBehaviour
     void Start()
     {
         Debug.Log("QAManager: Start - Hiding QACanvas");
-        HideQACanvas(); // Ensure the canvas is hidden at the start
+        HideQACanvas(); // Ensuring the canvas is hidden at the start
     }
 
     public void ShowQACanvas()
     {
         Debug.Log("QAManager: ShowQACanvas - Activating QACanvas");
-        QACanvas.gameObject.SetActive(true);
+        QACanvas.gameObject.SetActive(true); // Activating the QA canvas
     }
 
     public void HideQACanvas()
     {
         Debug.Log("QAManager: HideQACanvas");
-        QACanvas.gameObject.SetActive(false);
+        QACanvas.gameObject.SetActive(false); // Hiding the QA canvas
     }
 }

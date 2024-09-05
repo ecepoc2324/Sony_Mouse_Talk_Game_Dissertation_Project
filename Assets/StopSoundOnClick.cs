@@ -8,13 +8,13 @@ public class StopSoundOnClick : MonoBehaviour
     public GameObject audioSourceObject;
     public TextMeshProUGUI clickText;
 
-    private AudioSource audioSource;
+    private AudioSource audioSource; // Reference to AudioSource 
     // Start is called before the first frame update
     void Start()
     {
-        if (audioSourceObject != null)
+        if (audioSourceObject != null) // Checking if audio source object is assigned
         {
-            audioSource = audioSourceObject.GetComponent<AudioSource>();
+            audioSource = audioSourceObject.GetComponent<AudioSource>(); // Assigning to audioSource
         }
         else
         {
@@ -23,7 +23,7 @@ public class StopSoundOnClick : MonoBehaviour
 
         if (clickText != null)
         {
-            clickText.enabled = false; // Hide text initially
+            clickText.enabled = false; // Hiding text initially
         }
         else
         {
@@ -31,27 +31,29 @@ public class StopSoundOnClick : MonoBehaviour
         }
     }
 
+    // Showing and hiding text
+
     void Update()
     {
         if (audioSource != null && audioSource.isPlaying)
         {
             if (clickText != null)
             {
-                clickText.enabled = true; // Show text while audio is playing
+                clickText.enabled = true; // Showing text while audio is playing
             }
         }
         else
         {
             if (clickText != null)
             {
-                clickText.enabled = false; // Hide text when audio stops
+                clickText.enabled = false; // Hiding text when audio stops
             }
         }
     }
 
     void OnMouseDown()
     {
-        if (audioSource != null && audioSource.isPlaying)
+        if (audioSource != null && audioSource.isPlaying) // Checking if the audio is playing
         {
             audioSource.Stop();
         }

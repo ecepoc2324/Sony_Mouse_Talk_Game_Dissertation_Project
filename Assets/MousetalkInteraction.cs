@@ -29,11 +29,13 @@ public class MousetalkInteraction : MonoBehaviour
     {
         // Store the initial cover rotation
         initialCoverRotation = cover.transform.localRotation;
-        openCoverRotation = initialCoverRotation * Quaternion.Euler(180, 0, 0); // Adjust axis as needed
+        openCoverRotation = initialCoverRotation * Quaternion.Euler(180, 0, 0); // Rotation axis degrees for the cover
 
         // Get the Rigidbody component and set it to kinematic
         rb = GetComponent<Rigidbody>();
         rb.isKinematic = true;
+
+        // Hide the canvas 
 
         Debug.Log("MousetalkInteraction: Hiding QACanvas at Start");
         if (qaManager != null)
